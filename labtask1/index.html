@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Online Admission Form</h1>
+        <div style="width: 50%;">
+            <form>
+                <fieldset>
+                    <legend>Personal Info</legend>
+                    <table>
+                        <tr>
+                            <td><label>Full Name</label></td>
+                            <td><input type="Text" maxlength="10" placeholder="Abc" required> <br></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Father's Name</label>
+                            </td>
+                            <td>
+                                <input type="Text" maxlength="10" placeholder="cdf"> <br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Mother's Name</label>
+                            </td>
+                            <td>
+                                <input type="Text" maxlength="10" placeholder="ghi"> <br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Age: </label>
+                            </td>
+                            <td>
+                                <input type="number" max="50" placeholder="30"> <br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Date of birth</label>
+                            </td>
+                            <td><input type="date"> <br></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Gender</label>
+                            </td>
+                            <td>
+                                <input type="radio" name="gender" required>
+                                <label>Male</label>
+                                <input type="radio" name="gender">
+                                <label>Female</label>
+                                <input type="radio" name="gender">
+                                <label>Other</label>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+<br>
+                <fieldset>
+                    <legend>Academic Info</legend>
+                    <table>
+                        <tr>
+                            <td><label for="exam">Last Exam Passed</label></td>
+                            <td>
+                                <select id="exam" name="exam" required>
+                                    <option>HSC</option>
+                                    <option>SSC</option>
+                                    <option>Diploma</option>
+                                    <option>Other</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="gpa">GPA/Result</label></td>
+                            <td><input type="text" id="gpa" maxlength="10" placeholder="example: 5.00"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="department">Preferred Department / Course</label></td>
+                            <td>
+                                <select required>
+                                    <option>CSE</option>
+                                    <option>EEE</option>
+                                    <option>BBA</option>
+                                    <option>English</option>
+                                    <option>Other</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+<br>
+                <fieldset>
+                    <legend>Attachments</legend>
+                    <table>
+                        <tr>
+                            <td><label>CV: </label></td>
+                            <td><input type="file"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Transcript: </label></td>
+                            <td><input type="file"></td>
+                        </tr>
+                    </table>
+                </fieldset>
+<br>
+                <input type="submit">
+                <input type="reset">
+            </form>
+        </div>
+    </center>
+    
+</body>
+</html>
