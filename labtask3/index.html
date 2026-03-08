@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class ="container">
+        <div class="form">
+            <h1 style="text-align: center;">Registration Form</h1>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="id">ID:</label>
+            <input type="text" id="id" name="id">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"> 
+            
+            <label for="department">Department:</label>
+            <select id="department" name="department">
+                <option value="">--Select Department--  </option>
+                <option value="cse">Computer Science Engineering</option>
+                <option value="eee">Electrical and Electronic Engineering</option>
+                <option value="me">Mechanical Engineering</option>
+            </select>
+            
+            <br>
+            <button id="submit" onclick="handleSubmit()">Submit</button>
+        </div>
+
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
