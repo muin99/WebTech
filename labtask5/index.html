@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Analyzer</title>
+</head>
+<style>
+    .container {
+        width: 50%;
+        height: 50%;
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    textarea {
+        width: 100%;
+        height: 100px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    button {
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    #result {
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    #result p {
+        margin: 0;
+        padding: 0;
+    }
+</style>
+<body>
+    <center>
+        <div class="container">
+            <h1>Text Analyzer</h1>
+            <textarea id="text-input" placeholder="Enter your text here"></textarea><br>
+            <button id="analyze-button" onclick="analyzeText()">Analyze</button>
+            <div id="result"></div>
+        </div>
+    </center>
+    <script>
+        function analyzeText() {
+            var text = document.getElementById('text-input').value;
+            var charCount = text.length;
+            var wordCount = text.split(' ').length;
+            var reversedText = text.split('').reverse().join('');
+
+            document.getElementById('result').innerHTML = 
+            'Character Count: ' + charCount + 
+            '<br>Word Count: ' + wordCount + 
+            '<br>Reversed Text: ' + reversedText;
+        }
+    </script>
+</body>
+</html>
